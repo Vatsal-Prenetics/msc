@@ -8,12 +8,9 @@ interface H2Props {
 export const H2 = styled.h2`
   font-family: ${StyleConstants.font.regular};
   font-style: normal;
+  margin-top: 0.1em;
   font-weight: 500;
   font-size: ${StyleConstants.fontSize.medium};
   line-height: 25px;
-  color: ${(props: H2Props) =>
-    props.Result === 'Negative'
-      ? StyleConstants.color.PreneticsGreen
-      : StyleConstants.color.PreneticsBlack};
-  /* identical to box height, or 112% */
+  color: ${StyleConstants.color.PreneticsBlack};
 `;

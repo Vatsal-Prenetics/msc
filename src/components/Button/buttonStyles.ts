@@ -34,6 +34,5 @@ export const ButtonText = styled.p`
   font-size: ${StyleConstants.fontSize.xSmall};
   line-height: 15px;
   text-align: center;
-
-  color: #529c6e;
+  color: ${StyleConstants.color.PreneticsGreen};
 `;

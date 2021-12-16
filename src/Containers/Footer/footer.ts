@@ -3,12 +3,6 @@ import { StyleConstants } from './../../styles/StyleConstants';
 
 export const Wrapper = styled.footer``;
 
-/* position: absolute;
-width: 343px;
-height: 46px;
-left: 16px;
-top: 933px; */
-
 export const FooterButton = styled.button`
   margin-top: -5.375em;
   width: 100%;
@@ -18,21 +12,6 @@ export const FooterButton = styled.button`
   box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
   border: none;
 `;
-
-/*  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 343px;
-  height: 46px;
-  left: 16px;
-  top: 933px;
-  background: #529c6e;
-  box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 100px;
-  
-  */
 
 export const FooterText = styled.p`
   font-family: ${StyleConstants.font.regular};
