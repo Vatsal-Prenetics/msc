@@ -7,9 +7,9 @@ export const Wrapper = styled.div`
   flex-direction: column;
   text-align: start;
   width: 100%;
-  border-radius: 16px;
+  border-radius: 1em;
   background: ${StyleConstants.color.ModalGray};
-  max-height: 420px;
+  max-height: 27.5em;
 `;
 
 export const ReportHeader = styled.h1`
@@ -32,6 +32,7 @@ export const InnerWrapper = styled.div`
   width: 100%;
   max-height: 80%;
   margin-top: -1em;
+  padding-bottom: 1em;
   padding-left: 0.35em;
   padding-right: 0em;
 `;

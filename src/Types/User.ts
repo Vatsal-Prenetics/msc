@@ -10,11 +10,3 @@ export interface UserDevice extends User {
   ModelNumber: string;
   SerialNumber: string;
 }
-
-export interface Results extends UserDevice {
-  NegativeResultMessage: string;
-  PositiveMessage: string;
-  PositiveResultMessage: string;
-  DateOfResultReported: string;
-  TestResult: string;
-}

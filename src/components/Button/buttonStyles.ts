@@ -16,8 +16,8 @@ export const ButtonButton = styled.button`
 
   background: none;
   text-decoration: underline;
-  width: 157px;
-  height: 36px;
+  width: 10.8125em;
+  height: 3em;
 
   text-align: center;
   align-items: center;

@@ -1,4 +1,5 @@
-import { User, UserDevice, Results } from './../Types';
+import { Results } from '../Types/Results';
+import { User, UserDevice } from '../Types/User';
 
 export const user: User = {
   FirstName: 'Sophie',
@@ -31,5 +32,5 @@ export const userResults: Results = {
   PositiveMessage:
     'Please contact us at pos@circlepod.co or WhatsApp +852 9748 2596. You should also contact your local healthcare provider for next steps to take.',
   DateOfResultReported: 'Jul 15, 2021, 18:18',
-  TestResult: 'Negative',
+  TestResult: 'Positive',
 };

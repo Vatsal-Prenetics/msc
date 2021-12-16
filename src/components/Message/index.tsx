@@ -7,7 +7,7 @@ import {
 } from './MessageStyles';
 import { H2 } from './../ReportItems/H2';
 
-const Message = () => {
+const Message: React.FC = () => {
   return (
     <div>
       {userResults.TestResult === 'Negative' ? (

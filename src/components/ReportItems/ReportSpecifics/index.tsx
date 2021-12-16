@@ -12,11 +12,12 @@ interface ReportSpecificsProps {
 const ReportSpecifics: React.FC<ReportSpecificsProps> = (
   props: ReportSpecificsProps
 ) => {
+  console.log(props.Result);
   return (
     <Wrapper>
       <Inner>
         <H3>{props.Feild}</H3>
-        <H2>{props.Value}</H2>
+        <H2 color={props.Result}>{props.Value}</H2>
       </Inner>
     </Wrapper>
   );

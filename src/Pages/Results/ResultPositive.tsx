@@ -7,10 +7,9 @@ import Report from './../../Containers/Report/index';
 import Footer from './../../Containers/Footer/index';
 import { userResults } from '../../Content/Data';
 
-const ResultPositive = () => {
+const ResultPositive: React.FC = () => {
   return (
     <div>
-      {' '}
       <Appstyles>
         <Button title='Export test Report' />
         <H1>
