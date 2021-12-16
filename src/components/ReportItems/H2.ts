@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import { StyleConstants } from './../../styles/StyleConstants';
 
-interface H2Props {
-  Result?: string;
-}
-
 export const H2 = styled.h2`
   font-family: ${StyleConstants.font.regular};
   font-style: normal;

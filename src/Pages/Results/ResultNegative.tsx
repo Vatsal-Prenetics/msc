@@ -8,21 +8,19 @@ import Report from './../../Containers/Report/index';
 import Footer from './../../Containers/Footer/index';
 import { userResults } from './../../Content/Data';
 
-interface Props {}
-
-const ResultNegative = (props: Props) => {
+const ResultNegative = () => {
   return (
     <div>
       {' '}
       <Appstyles>
         <Button title='Export test Report' />
         <H1>
-          Sophie's
+          {userResults.FirstName}'s
           <br />
           <Span>Covid-19 test result is</Span>
         </H1>
-        <ResultModal result='Negative' />
-        <Message ResultMessage={userResults.ResultMessage} />
+        <ResultModal />
+        <Message />
         <Report />
         <Footer title='Next Steps' />
       </Appstyles>

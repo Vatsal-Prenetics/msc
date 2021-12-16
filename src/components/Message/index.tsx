@@ -6,24 +6,26 @@ import {
   PositiveMessageModal,
 } from './MessageStyles';
 import { H2 } from './../ReportItems/H2';
-interface MessageProps {
-  TestResult: string;
-}
 
-const Message = (props: MessageProps) => {
+const Message = () => {
   return (
     <div>
-      {props.TestResult === 'Negative' ? (
+      {userResults.TestResult === 'Negative' ? (
         <NegativeMessageStyles>
           {userResults.NegativeResultMessage}
         </NegativeMessageStyles>
       ) : (
-        <PositiveMessageModal>
+        <>
           <PositiveMessageStyles>
-            <H2>Next steps for Positive</H2>
             {userResults.PositiveResultMessage}
           </PositiveMessageStyles>
-        </PositiveMessageModal>
+          <PositiveMessageModal>
+            <PositiveMessageStyles>
+              <H2>Next steps for Positive</H2>
+              {userResults.PositiveMessage}
+            </PositiveMessageStyles>
+          </PositiveMessageModal>
+        </>
       )}
     </div>
   );

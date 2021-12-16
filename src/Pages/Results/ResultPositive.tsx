@@ -5,23 +5,21 @@ import ResultModal from './../../components/ResultModal/index';
 import Message from './../../components/Message/index';
 import Report from './../../Containers/Report/index';
 import Footer from './../../Containers/Footer/index';
-import { userResults } from './../../Content/Data';
+import { userResults } from '../../Content/Data';
 
-interface Props {}
-
-const ResultPositive = (props: Props) => {
+const ResultPositive = () => {
   return (
     <div>
       {' '}
       <Appstyles>
         <Button title='Export test Report' />
         <H1>
-          Sophie's
+          {userResults.FirstName}'s
           <br />
           <Span>Covid-19 test result is</Span>
         </H1>
-        <ResultModal Result='Positive' />
-        <Message TestResult={userResults.TestResult} />
+        <ResultModal />
+        <Message />
         <Report />
         <Footer title='Next Steps' />
       </Appstyles>

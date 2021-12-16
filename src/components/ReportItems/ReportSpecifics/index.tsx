@@ -16,7 +16,7 @@ const ReportSpecifics: React.FC<ReportSpecificsProps> = (
     <Wrapper>
       <Inner>
         <H3>{props.Feild}</H3>
-        <H2 Result={props.Result}>{props.Value}</H2>
+        <H2>{props.Value}</H2>
       </Inner>
     </Wrapper>
   );

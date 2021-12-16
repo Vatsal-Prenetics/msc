@@ -1,14 +1,11 @@
 import React from 'react';
+import { userResults } from '../../Content/Data';
 import { Modal, ModalText } from './ResultModalStyles';
 
-interface ResultModalProps {
-  Result: string | undefined;
-}
-
-const ResultModal: React.FC<ResultModalProps> = (props: ResultModalProps) => {
+const ResultModal: React.FC = () => {
   return (
-    <Modal Result={props.Result}>
-      <ModalText>{props.Result}</ModalText>
+    <Modal Result={userResults.TestResult}>
+      <ModalText>{userResults.TestResult}</ModalText>
     </Modal>
   );
 };

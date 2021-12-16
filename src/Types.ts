@@ -13,6 +13,7 @@ export interface UserDevice extends User {
 
 export interface Results extends UserDevice {
   NegativeResultMessage: string;
+  PositiveMessage: string;
   PositiveResultMessage: string;
   DateOfResultReported: string;
   TestResult: string;
