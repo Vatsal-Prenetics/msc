@@ -13,12 +13,9 @@ export const ButtonButton = styled.button`
   flex-direction: row;
   margin-bottom: 4.688em;
   justify-content: flex-end;
-
   background: none;
-  text-decoration: underline;
   width: 10.8125em;
   height: 3em;
-
   text-align: center;
   align-items: center;
   border: 1px solid #529c6e;

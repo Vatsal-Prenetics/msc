@@ -11,7 +11,7 @@ const ResultPositive: React.FC = () => {
   return (
     <div>
       <Appstyles>
-        <Button title='Export test Report' />
+        <Button title='Share Report' />
         <H1>
           {userResults.FirstName}'s
           <br />
