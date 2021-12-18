@@ -32,5 +32,5 @@ export const userResults: Results = {
   PositiveMessage:
     'Please contact us at pos@circlepod.co or WhatsApp +852 9748 2596. You should also contact your local healthcare provider for next steps to take.',
   DateOfResultReported: 'Jul 15, 2021, 18:18',
-  TestResult: 'Positive',
+  TestResult: 'Negative',
 };

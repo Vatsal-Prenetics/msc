@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { StyleConstants } from './../../styles/StyleConstants';
 
-interface ModalProps {
+export interface ModalProps {
   Result: string;
 }
 
@@ -18,12 +18,6 @@ export const Modal = styled.div`
   justify-content: center;
   margin-top: 1.5em;
 `;
-
-/*  background: ${(props: ModalProps) =>
-    props.Result === 'Negative'
-      ? StyleConstants.color.PreneticsGreen
-      : StyleConstants.color
-          .PreneticsBlack} : props.Result === 'Positive' ? StyleConstants.color.PreneticsRed : StyleConstants.color.PreneticsBlack; */
 
 export const ModalText = styled.div`
   font-family: ${StyleConstants.font.regular};

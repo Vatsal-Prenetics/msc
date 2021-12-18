@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 import { StyleConstants } from './../../styles/StyleConstants';
 
-export const Wrapper = styled.footer``;
+export const Wrapper = styled.footer`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 4.688em;
+`;
 
 export const FooterButton = styled.button`
   margin-top: -5.375em;

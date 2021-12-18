@@ -1,7 +1,8 @@
 import React, { Children, ReactNode } from 'react';
+import A from './A';
 import { ButtonButton, Wrapper } from './buttonStyles';
 
-interface ButtonProps {
+export interface ButtonProps {
   title?: string;
   onClick?(): void;
   href?: string;
@@ -10,16 +11,13 @@ interface ButtonProps {
 }
 
 function Button(props: ButtonProps) {
-  // Render an anchor tag
   let button;
+  // Render an anchor tag
+  <A href={props.href} onClick={props.onClick}>
+    {Children.toArray(props.children)}
+  </A>;
+
   // If the Button has a handleRoute prop, we want to render a button
-  if (props.handleRoute) {
-    button = (
-      <ButtonButton onClick={props.handleRoute}>
-        {Children.toArray(props.children)}
-      </ButtonButton>
-    );
-  }
 
   if (props.title) {
     button = <ButtonButton>{props.title}</ButtonButton>;

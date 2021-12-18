@@ -1,6 +1,4 @@
-import React from 'react';
-import { Wrapper } from '../../components/Button/buttonStyles';
-import { FooterButton, FooterText } from './footer';
+import { FooterButton, FooterText, Wrapper } from './footer';
 
 interface FooterButtonProps {
   title?: string;
