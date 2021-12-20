@@ -1,15 +1,19 @@
 import styled from 'styled-components';
 import { StyleConstants } from './../../styles/StyleConstants';
 
+export const Dividend = styled.div`
+  margin: 1.5em 8% 0 8%;
+  border-top: 1px solid lightgrey;
+`;
+
 export const Wrapper = styled.div`
   display: flex;
-  margin-top: 2.5em;
   flex-direction: column;
   text-align: start;
   width: 100%;
   border-radius: 1em;
   background: ${StyleConstants.color.ModalGray};
-  max-height: 27.5em;
+  max-height: 28.5em;
 `;
 
 export const ReportHeader = styled.h1`

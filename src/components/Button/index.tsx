@@ -4,10 +4,11 @@ import { ButtonButton, Wrapper } from './buttonStyles';
 
 export interface ButtonProps {
   title?: string;
-  onClick?(): void;
   href?: string;
-  handleRoute?(): void;
   children?: ReactNode;
+  imgLeft?: ReactNode;
+  onClick?(): void;
+  handleRoute?(): void;
 }
 
 function Button(props: ButtonProps) {
@@ -20,7 +21,7 @@ function Button(props: ButtonProps) {
   // If the Button has a handleRoute prop, we want to render a button
 
   if (props.title) {
-    button = <ButtonButton>{props.title}</ButtonButton>;
+    button = <ButtonButton>{props.imgLeft}{props.title}</ButtonButton>;
   }
 
   return <Wrapper>{button}</Wrapper>;

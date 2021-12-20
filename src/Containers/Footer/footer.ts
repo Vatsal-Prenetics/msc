@@ -6,13 +6,12 @@ export const Wrapper = styled.footer`
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 4.688em;
+  padding: 1.6em 0 2em 0;
 `;
 
 export const FooterButton = styled.button`
-  margin-top: -5.375em;
   width: 100%;
-  height: 2.875em;
+  height: 3.5em;
   background-color: ${StyleConstants.color.PreneticsGreen};
   border-radius: 6.25em;
   box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);

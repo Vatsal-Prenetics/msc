@@ -8,14 +8,13 @@ export const H2 = styled.h2`
   font-weight: 500;
   font-size: ${StyleConstants.fontSize.medium};
   line-height: 25px;
-  color:${(props) =>
-    props.color === 'Negative'
-      ? StyleConstants.color.PreneticsGreen
-      : StyleConstants.color.PreneticsBlack}; }
-      
-
-   color:${(props) =>
-     props.color === 'Positive'
-       ? StyleConstants.color.PreneticsRed
-       : StyleConstants.color.PreneticsBlack}; }
+  color:${props => {
+    if (props.color === 'Negative') {
+      return StyleConstants.color.PreneticsGreen;
+    }
+    if (props.color === 'Positive') {
+      return StyleConstants.color.PreneticsRed;
+    }
+    return StyleConstants.color.PreneticsBlack;
+  }}
 `;

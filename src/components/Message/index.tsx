@@ -1,28 +1,29 @@
 import React from 'react';
-import { userResults } from '../../Content/Data';
+import {userResults} from '../../Content/Data';
 import {
   NegativeMessageStyles,
   PositiveMessageStyles,
   PositiveMessageModal,
 } from './MessageStyles';
-import { H2 } from './../ReportItems/H2';
+import {H2} from './../ReportItems/H2';
+import {resultMessage} from './../../Types/Results';
 
 const Message: React.FC = () => {
   return (
     <div>
       {userResults.TestResult === 'Negative' ? (
         <NegativeMessageStyles>
-          {userResults.NegativeResultMessage}
+          {resultMessage.NegativeResultMessage}
         </NegativeMessageStyles>
       ) : (
         <>
           <PositiveMessageStyles>
-            {userResults.PositiveResultMessage}
+            {resultMessage.PositiveResultMessage}
           </PositiveMessageStyles>
           <PositiveMessageModal>
             <PositiveMessageStyles>
               <H2>Next steps for Positive</H2>
-              {userResults.PositiveMessage}
+              {resultMessage.PositiveMessage}
             </PositiveMessageStyles>
           </PositiveMessageModal>
         </>

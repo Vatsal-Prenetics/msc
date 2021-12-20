@@ -1,12 +1,11 @@
 export interface User {
-  FirstName: string;
-  LastName: string;
+  FirstName?: string;
+  FullName: string;
   Gender: string;
-}
-
-export interface UserDevice extends User {
-  DeviceType: string;
+  TestResult: string;
+  DateOfResultReported: string;
+  ModelNumber?: string;
+  DeviceType?: string;
   CapsuleNumber: string;
-  ModelNumber: string;
-  SerialNumber: string;
+  SerialNumber?: string;
 }

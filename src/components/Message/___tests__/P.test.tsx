@@ -8,7 +8,7 @@ const children = 'text';
 
 const renderComponent = (props = {}) => {
   const utils = render(
-    <NegativeMessageStyles {...props}>{children}</NegativeMessageStyles>
+    <NegativeMessageStyles {...props}>{children}</NegativeMessageStyles>,
   );
   const pN = utils.queryByText(children);
   return { ...utils, pN };
@@ -16,7 +16,7 @@ const renderComponent = (props = {}) => {
 
 const renderComponentTwo = (props = {}) => {
   const utils = render(
-    <PositiveMessageStyles {...props}>{children}</PositiveMessageStyles>
+    <PositiveMessageStyles {...props}>{children}</PositiveMessageStyles>,
   );
   const p = utils.queryByText(children);
   return { ...utils, p };

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StyleConstants } from './../../styles/StyleConstants';
+import {StyleConstants} from './../../styles/StyleConstants';
 
 export interface ModalProps {
   Result: string;
@@ -12,7 +12,6 @@ export const Modal = styled.div`
       ? StyleConstants.color.PreneticsGreen
       : StyleConstants.color.PreneticsRed};
   width: 100%;
-  height: 100%;
   border-radius: 16px;
   text-align: center;
   justify-content: center;
@@ -25,7 +24,7 @@ export const ModalText = styled.div`
   font-weight: Light;
   font-size: ${StyleConstants.fontSize.large};
   line-height: 40px;
-  padding: 25px;
+  padding: 30px;
   text-align: center;
   color: ${StyleConstants.color.ModalWhite};
 `;

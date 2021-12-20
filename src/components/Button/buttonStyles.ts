@@ -6,14 +6,14 @@ export const Wrapper = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 4.688em;
 `;
 
 export const ButtonButton = styled.button`
+  display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
-  margin-bottom: 4.688em;
-  justify-content: flex-end;
   background: none;
+  padding: 0.25em 0.8em;
   width: 10.8125em;
   height: 3em;
   text-align: center;

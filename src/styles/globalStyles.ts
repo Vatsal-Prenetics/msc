@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const Appstyles = styled.div`
+  max-width: 780px;
+  margin: 0 auto;
+  background: white;
   display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding: 0 1.5em;
 `;
 
 export const Span = styled.span`

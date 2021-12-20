@@ -1,17 +1,17 @@
 import { Appstyles, Span } from './../../styles/globalStyles';
-import Button from './../../components/Button/index';
 import { H1 } from './../../components/H1/index';
 import ResultModal from './../../components/ResultModal/index';
 import Message from './../../components/Message/index';
 import Report from './../../Containers/Report/index';
 import Footer from './../../Containers/Footer/index';
 import { userResults } from '../../Content/Data';
+import { Header } from './Header';
 
 const ResultPositive: React.FC = () => {
   return (
     <div>
       <Appstyles>
-        <Button title='Share Report' />
+        <Header />
         <H1>
           {userResults.FirstName}'s
           <br />
@@ -20,7 +20,7 @@ const ResultPositive: React.FC = () => {
         <ResultModal />
         <Message />
         <Report />
-        <Footer title='Next Steps' />
+        <Footer title="Next Steps" />
       </Appstyles>
     </div>
   );

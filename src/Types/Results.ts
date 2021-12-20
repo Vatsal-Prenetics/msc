@@ -1,5 +1,3 @@
-import { UserDevice } from './User';
-
 export enum PassportResult {
   Postive = 'Positive',
   Negative = 'Negative',
@@ -9,10 +7,18 @@ export enum PassportResult {
   Expired = 'Expired',
 }
 
-export interface Results extends UserDevice {
+interface ResultMessage {
   NegativeResultMessage: string;
   PositiveMessage: string;
   PositiveResultMessage: string;
-  DateOfResultReported: string;
-  TestResult: string;
 }
+
+export const resultMessage: ResultMessage = {
+  NegativeResultMessage:
+    // tslint:disable-next-line:max-line-length
+    'A negative result means that the Circle HealthPod test did not detect the presence of SARS-CoV-2 in this sample. This means you are not likely to currently have Covid-19.',
+  PositiveResultMessage:
+    'A positive result means that the Circle HealthPod test detected the presence of SARS-CoV-2 in this sample. This means you are likely to currently have Covid-19.',
+  PositiveMessage:
+    'Please contact us at pos@circlepod.co or WhatsApp +852 9748 2596. You should also contact your local healthcare provider for next steps to take.',
+};

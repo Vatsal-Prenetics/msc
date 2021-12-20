@@ -7,9 +7,14 @@ body {
   @font-face {
     font-family: 'Circular Std';
     src: url('./styles/Fonts/circular-std-medium-500.ttf');
-  }
+  };
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: grey;
+  }
 }
 
 *{

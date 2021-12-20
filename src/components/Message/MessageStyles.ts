@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import { StyleConstants } from '../../styles/StyleConstants';
+import {StyleConstants} from '../../styles/StyleConstants';
 
 export const NegativeMessageStyles = styled.p`
   width: 100%;
-  height: 100px;
-  margin-top: 1.5em;
+  margin: 1.8em 0;
   text-align: start;
   font-family: ${StyleConstants.font.regular};
   font-family: ${StyleConstants.font.regular};
@@ -35,6 +34,7 @@ export const PositiveMessageModal = styled.div`
   width: 100%;
   align-items: center;
   margin-top: 1.5em;
+  margin-bottom: 1.5em;
   text-align: start;
   justify-content: space-between;
   background: rgba(235, 87, 87, 0.16);

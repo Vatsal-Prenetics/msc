@@ -4,9 +4,9 @@ import { PositiveMessageModal } from './../MessageStyles';
 
 const renderComponent = (props = {}) => {
   const utils = render(
-    <PositiveMessageModal {...props}>Wrapper</PositiveMessageModal>
+    <PositiveMessageModal {...props}>Wrapper</PositiveMessageModal>,
   );
-  const wrapper = utils.queryByText('Wrapper')!;
+  const wrapper = utils.queryByText('Wrapper');
   return { ...utils, wrapper };
 };
 
